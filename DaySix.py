@@ -16,23 +16,13 @@ for k in range(len(T)):
         if i*(Time-i) > target:
             l1 = i
             break
-    for j in range(R,1,-1):
-        if j*(Time-j) > target:
-            l2 = j+1
-            break
-    res *= (l2-l1)
-
+    res *= (Time+1-l1*2)
 
 for i in range(1,T2+1):
     if i*(T2-i) > D2:
         l1 = i
         break
-for j in range(T2,1,-1):
-    if j*(T2-j) > D2:
-        l2 = j+1
-        break
-    
-res2 = (l2-l1)
+res2 = (T2+1-l1*2)
 
 print(res)
 print(res2)
